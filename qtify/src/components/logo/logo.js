@@ -1,4 +1,4 @@
-import LogoImage from '../../assests/Qtify.png';
+import LogoImage from '../../assests/Group3748.png';
 
 function Logo(){
 
