@@ -2,6 +2,7 @@ import styles from './albums.module.css';
 import Section from '../section/Section';
 import fetchTop ,{fetchNew,fetchSong}from '../../api/api';
 import { useEffect,useState } from 'react';
+import {fetchFilters} from '../../api/api'
 
 
 function Albums(){
@@ -21,7 +22,7 @@ function Albums(){
         generateData('songs',fetchSong);
     },[])
 
-    console.log(data.newAlbum);
+    console.log(data.songs);
 
 
     return(
@@ -29,6 +30,8 @@ function Albums(){
             <Section title="Top Albums" data= {data.topAlbums} type="album" />
             <hr/>
             <Section title="New Albums" data= {data.newAlbum} type="album" />
+            <hr/>
+            <Section title="Songs" filterSource={fetchFilters} data={data.songs} type="songs"/>
            
         </div>
     )

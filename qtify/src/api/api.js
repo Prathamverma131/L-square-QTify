@@ -23,7 +23,17 @@ export const fetchNew = async ()=>{
 
 export const fetchSong = async ()=>{
     try{
-        var data = await axios.get('https://qtify-backend-labs.crio.do/albums/songs');
+        var data = await axios.get('https://qtify-backend-labs.crio.do/songs');
+        return data.data;}
+        catch(e){
+            console.log(e);
+        }
+        return [];
+}
+
+export const fetchFilters = async()=>{
+    try{
+        var data = await axios.get('https://qtify-backend-labs.crio.do/genres');
         return data.data;}
         catch(e){
             console.log(e);

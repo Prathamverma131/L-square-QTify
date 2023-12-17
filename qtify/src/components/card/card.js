@@ -29,7 +29,7 @@ return(
         <div className={styles.wrapper}>
             <div className={styles.card}>
                 <img src={image} alt="song" loading="lazy"/>
-                <div className={styles.banner}><div className={styles.pill} size="small" label={`${follows} Follows`}>
+                <div className={styles.banner}><div className={styles.pill} >
                     <p>{likes} Likes</p>
                     </div>
                     </div>
