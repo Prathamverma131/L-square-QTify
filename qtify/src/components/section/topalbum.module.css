@@ -1,0 +1,36 @@
+
+.con{
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+.para{
+    color: #FFFFFF;
+    
+    font-size: 20px;
+    font-weight: 600;
+}
+.show{
+   
+    font-size: 20px;
+    font-weight: 600;
+    color: var(--color-primary);
+    border: none;
+    background-color: inherit;
+    cursor: pointer;
+}
+.topcon{
+    margin-top: 20px;
+    
+}
+.wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+.tcontainer{
+    margin: 32px 0px;
+}
+
+
+

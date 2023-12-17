@@ -1,3 +1,6 @@
 .album{
-    margin: 24px 56px;
+    margin: 0px 56px;
+}
+hr{
+    border: 1px solid var(--color-primary);
 }
