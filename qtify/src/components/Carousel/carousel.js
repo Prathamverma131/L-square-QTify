@@ -19,7 +19,7 @@ function Carousel({data,renderComponent}){
     
     
     return(<div className={styles.wrapper}>
-          <Swiper style={{padding:"0px 20px"}} initialSlide={0} modules={[Navigation]} slidesPerView={"auto"} spaceBetween={40} allowTouchMove>
+          <Swiper className={styles.swiper} style={{padding:"0px 20px",color: "var(--color-white)"}} initialSlide={0} modules={[Navigation]} slidesPerView={"auto"} spaceBetween={40} allowTouchMove>
     <Controls data={data}/>        
     <CarouselLeftNavigation/>
     <CarouselReftNavigation/>
